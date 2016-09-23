@@ -11,7 +11,7 @@ class DetailContainer extends React.Component {
   render() {
       
       return (
-        <div className="g-clearfix homePage">
+        <div>
             this is detail
             {this.props.children}
         </div>
