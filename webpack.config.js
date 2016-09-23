@@ -107,7 +107,7 @@ module.exports = {
 
 if (process.env.NODE_ENV === 'production') {
     module.exports.plugins = (module.exports.plugins || []).concat([
-        make react much smaller by doing a production build
+       // make react much smaller by doing a production build
         new webpack.DefinePlugin({
             'process.env': {
               // This has effect on the react lib size
@@ -134,7 +134,7 @@ if (process.env.NODE_ENV === 'production') {
                         secure: false
                     };
                     return o;
-                }, {})
+                }, {});
                 
 
     // 代理请求
