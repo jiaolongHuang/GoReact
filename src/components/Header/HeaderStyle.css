@@ -1,0 +1,77 @@
+@import "../../style/_variables.css";
+
+$header-height: 60px;
+$link-height: 60px;
+.header{
+	position: fixed;
+	width: calc(100% - 100vw + 100%);
+	height: $header-height;
+	padding-left: calc(100vw - 100%);
+	line-height: $header-height;
+	background-color: #36404a;
+	z-index: 100;
+
+	.header-inner{
+		width: $wrapper-width;
+		margin: 0 auto;
+	}
+}
+
+a.logo{
+	float: left;
+	width: 80px;
+	color: $white;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	span{
+		color: #5fbeaa;
+	}
+	&:hover{
+		color: $white;
+	}
+}
+.nav-list{
+	float: left;
+	li{
+		float: left;
+	}
+	a{
+		height: $link-height;
+		line-height: $link-height;
+		padding: 0 20px;
+		font-size: 14px;
+		transition: color .2s;
+		color: #ccc;
+		&:hover, &.curr{
+			color: $white;
+		}
+		&.curr{
+			font-weight: bold;
+		}
+	}
+}
+
+.loginWrap{
+	float: right;
+	margin-left: 25px;
+	color: #ccc;
+	font-size: 14px;
+	.line{
+		margin: 0 10px;
+	}
+	a{
+	  font-weight: bold;
+		color: #ccc;
+	}
+	a:hover{
+		color: $white;
+	}
+}
+.test{
+	color: green;
+}
+.testaa{
+	font-size: 29px;
+}

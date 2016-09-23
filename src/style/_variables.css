@@ -1,0 +1,55 @@
+/* ====== Colors  ======= */
+
+
+$brand-primary: #2196F3;
+$brand-success: #0b57ff;
+$brand-info:    #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger:  #d9534f;
+
+$white: #f;
+/* ====== Scaffolding  ======= */
+/* ## Settings for some of the most global styles. */
+
+$body-color:            #ebeff2;
+$text-color:            #333;
+
+$link-color:            #666;
+$link-hover-color:      #333;
+$link-hover-decoration: underline;
+$wrapper-width:  1100px;
+
+/* ====== Typography  ======= */
+/* ## Font, line-height, and color for body text, headings, and more. */
+$font-family-base:"Microsoft Yahei",Helvetica, Arial, sans-serif;
+$font-size-base: 14px;
+$font-size-midd: 16px;
+$font-size-large: 18px;
+$font-size-small: 12px;
+
+$line-height-base: 22px;
+$headings-font-family:    inherit;
+$headings-font-weight:    500;
+$headings-color:          inherit;
+
+
+/* ====== Tables  ======= */
+/* ## Customizes the `.table` component with basic values, each used across all table variations. */
+/* Padding for `<th>`s and `<td>`s. */
+
+$table-cell-padding:            8px;
+/* Padding for cells in `.table-condensed`. */
+$table-condensed-cell-padding:  5px;
+
+/* Default background color used for all tables. */
+$table-bg:                      transparent;
+/* Background color used for `.table-striped`. */
+$table-bg-accent:               #f9f9f9;
+/* Background color used for `.table-hover`. */
+$table-bg-hover:                #f4f8fb;
+$table-bg-active:               @table-bg-hover;
+
+/* Border color for table and cell borders. */
+$table-border-color:            #ebeff2;
+
+

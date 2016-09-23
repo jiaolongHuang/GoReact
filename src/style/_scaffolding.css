@@ -1,0 +1,71 @@
+/* body */
+body{
+	font: $font-size-base/$line-height-base $font-family-base;
+	color: $text-color;
+	background-color: $body-color;
+	/*overflow-y: scroll;*/
+}
+
+/*body::-webkit-scrollbar{
+    width: 5px;
+}*/
+
+/*Reset fonts for relevant elements*/
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+/*link*/
+a {
+	color: $link-color;
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		color: $link-hover-color;
+	}
+}
+/*Img*/
+img{
+	vertical-align: middle;
+}
+
+/*iOS "clickable elements" fix for role="button"
+Fixes "clickability" issue (and more generally, the firing of events such as focus as well)
+for traditionally non-focusable elements with role="button"
+see https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile*/
+
+[role="button"] {
+	cursor: pointer;
+}
+
+/*wrapper*/
+.wrapper{
+	padding-left: calc(100vw - 100%);
+	padding-top: 100px;
+	.wrapper-inner{
+		width: $wrapper-width;
+		margin: 0 auto;
+	}
+}
+
+.g-clearfix:after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.g-learfix{
+	*zoom: 1;
+}
+
+.tri{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent;
+}
